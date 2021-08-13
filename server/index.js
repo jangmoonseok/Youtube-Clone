@@ -21,6 +21,11 @@ mongoose.connect(config.mongoURL, {
 
 app.use('/api/user', require('./router/user') )
 app.use('/api/video', require('./router/video') )
+app.use('/api/subscribe', require('./router/subscribe') )
+app.use('/api/comment', require('./router/comment') )
+app.use('/api/like', require('./router/like') )
+
+
 
 
 app.use('/uploads', express.static('uploads'));
